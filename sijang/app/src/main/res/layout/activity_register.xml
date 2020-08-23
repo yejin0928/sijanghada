@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Login.RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:fontFamily="@font/nanum"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="패스워드"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/et_id"
+        app:layout_constraintStart_toStartOf="@id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_id" android:fontFamily="@font/nanum"/>
+
+    <EditText
+        android:id="@+id/et_passck"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="패스워드 확인"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/et_pass"
+        app:layout_constraintStart_toStartOf="@id/et_pass"
+        app:layout_constraintTop_toBottomOf="@id/et_pass" android:fontFamily="@font/nanum"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="상인/소비자"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/et_passck"
+        app:layout_constraintStart_toStartOf="@id/et_passck"
+        app:layout_constraintTop_toBottomOf="@id/et_passck" android:fontFamily="@font/nanum"/>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="#BFC638"
+        android:fontFamily="@font/nanum"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <Button
+        android:id="@+id/validateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:background="#BFC638"
+        android:text="중복확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@id/et_id"
+        app:layout_constraintTop_toTopOf="parent" android:fontFamily="@font/nanum"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
