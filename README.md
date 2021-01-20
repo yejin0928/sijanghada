@@ -28,7 +28,7 @@ ICT 공모전 최종 발표안.pdf파일 확인
 
 ### 개발환경  
 - Android studio
-- login database: php
+- login: php
 - database:clite
 - Google vision api
 - Google maps api
